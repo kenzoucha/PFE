@@ -20,7 +20,7 @@ mongodb://node:nodeuser@ds051655.mongolab.com:51655/projetkenza
 // MongoDB configuration
 //  mongodb://admin:admin@ds055485.mongolab.com:55485/stockdeal
 //  mongodb://localhost/Pc
-mongoose.connect('mongodb://localhost/Pc', function(err, res) {
+mongoose.connect('mongodb://admin:admin@ds055485.mongolab.com:55485/stockdeal', function(err, res) {
   if(err) {
     console.log('error connecting to MongoDB Database. ' + err);
   } else {

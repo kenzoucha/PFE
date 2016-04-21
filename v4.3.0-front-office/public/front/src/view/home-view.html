@@ -1,0 +1,30 @@
+
+
+<div class="row">
+    <div class="col s3" ng-repeat="prod in products | filter : byInput">
+        <div class="card small">
+            <div class="chip" style="position: absolute; right: 5px; top: 5px; z-index: 999;">
+                <span class="deep-orange-text">{{prod.price}} DT</span>
+                <img ng-src="assets/images/save-money.png" alt="Contact Person">
+            </div>
+            <div class="card-image">
+                <div ng-if="prod.images.length !== 0">
+                    <div ng-repeat="img in prod.images | limitTo : 1">
+                        <img ng-src="assets/images/{{img.name}}">
+                    </div>
+                </div>
+                <div ng-if="prod.images.length == 0">
+                    <img ng-src="assets/images/no_image.jpeg">
+                </div>
+                <span class="card-title">{{prod.designation}}</span>
+            </div>
+            <div class="card-content">
+                <p>{{prod.description | limitTo : 21}}... <a ui-sref="products.detail({productId:prod._id})"> Lire la suite&rarr;</a></p>
+            </div>
+            <div class="card-action">
+              <a  ng-click="edit()" href="">Ajouter au panier</a>
+
+          </div>
+        </div>
+    </div>
+</div>
