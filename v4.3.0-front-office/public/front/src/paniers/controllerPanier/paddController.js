@@ -1,6 +1,6 @@
 
-stockDealUser.controller('paddCtr', ['$scope','panierService','$state','toaster', '$state',
-    function($scope, panierService, $state, toaster, $state){
+stockDealUser.controller('paddCtr', ['$scope','panierService','$state','toasty', '$state',
+    function($scope, panierService, $state, toasty, $state){
         console.log("designation :::",$scope.product);
 
         $scope.addPanier = function () {

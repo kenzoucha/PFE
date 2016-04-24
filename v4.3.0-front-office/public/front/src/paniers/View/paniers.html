@@ -16,10 +16,10 @@
         </thead>
 
         <tbody>
-        <tr ng-repeat="product in products | filter : byInput">
-            <td>{{product.designation}}</td>
-            <td>{{product.price}}</td>
-           <td><a  class="btn pink" name="action" ng-click="">Enregister<i class="material-icons right">send</i></a></td>
+        <tr ng-repeat="panier in paniers ">
+            <td>{{panier._id}}</td>
+            <td>{{panier.designation}}</td>
+           <td><a  class="btn pink" name="action" ng-click="getProduct">Enregister<i class="material-icons right">send</i></a></td>
         </tr>
         </tbody>
     </table>

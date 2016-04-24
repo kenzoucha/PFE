@@ -25,7 +25,7 @@
                 <a class="btn-floating waves-effect waves-light pink accent-2"><i class="mdi-action-room"></i></a>
                 <a class="btn-floating waves-effect waves-light red accent-2"><i class="mdi-action-favorite"></i></a>
                 <a class="btn-floating waves-effect waves-light light-blue"><i class="mdi-action-visibility"></i></a>
-                <button type="submit"  name="action"  class="btn-floating waves-effect waves-light green" a ui-sref="panier"><i class=" mdi-action-add-shopping-cart"></i></button>
+                <button   name="action"  class="btn-floating waves-effect waves-light green" ng-click="addToPanier(prod._id)"  ><i class=" mdi-action-add-shopping-cart"></i></button>
                 <a ui-sref="products.detail({productId:prod._id})" class="right" style="color: #5bc0de;"><i class="material-icons">trending_flat</i></a>
             </div>
         </div>
