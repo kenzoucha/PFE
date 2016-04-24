@@ -1,6 +1,4 @@
-/**
- * Created by lahmadi on 16/04/2016.
- */
+
 StockDealAdmin.controller('ProductCtr', function($scope, categoriesService, scategories,productsService) { //,productsService, products
   $scope.categories = categoriesService.all();
   $scope.product ={} //new products.product;

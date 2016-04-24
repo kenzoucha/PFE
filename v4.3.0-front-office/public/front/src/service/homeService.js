@@ -1,6 +1,6 @@
 
-stockDealUser.factory('homeService',['$resource','API','$q','$http', function($resource,API,$q,$http){
-   var Product = $resource(API.adminApi + '/product/:id',null,{
+stockDealUser.factory('homeService',['$resource','API','$q','$http', function($resource, API,$q,$http){
+    var Product = $resource(API.adminApi + '/product/:id',null,{
         'update': {method: 'PUT', params: {id: '@id'}}
     });
     var factory = {};

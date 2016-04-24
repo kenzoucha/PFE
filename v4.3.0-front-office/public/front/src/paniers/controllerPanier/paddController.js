@@ -1,6 +1,4 @@
-/**
- * Created by Kenza on 20/04/2016.
- */
+
 stockDealUser.controller('paddCtr', ['$scope','panierService','$state','toaster', '$state',
     function($scope, panierService, $state, toaster, $state){
         console.log("designation :::",$scope.product);
